@@ -10,8 +10,8 @@ namespace R5T.Z0040
     [ValuesMarker]
     public partial interface IDotnetRuntimeDirectoryPaths : IValuesMarker
     {
-        public DirectoryPath NetCoreApp_RuntimesDirectoryPath => @"C:\Program Files\dotnet\shared\Microsoft.NETCore.App\".ToDirectoryPath();
-        public DirectoryPath AspNetCoreApp_RuntimesDirectoryPath => @"C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\".ToDirectoryPath();
-        public DirectoryPath WindowsDesktopApp_RuntimesDirectoryPath => @"C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\".ToDirectoryPath();
+        public IDirectoryPath NetCoreApp_RuntimesDirectoryPath => @"C:\Program Files\dotnet\shared\Microsoft.NETCore.App\".ToDirectoryPath();
+        public IDirectoryPath AspNetCoreApp_RuntimesDirectoryPath => @"C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\".ToDirectoryPath();
+        public IDirectoryPath WindowsDesktopApp_RuntimesDirectoryPath => @"C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\".ToDirectoryPath();
     }
 }
